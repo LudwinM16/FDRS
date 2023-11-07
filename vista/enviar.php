@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://kit.fontawesome.com/c5995498b9.js" crossorigin="anonymous"></script>
 	<title>FDRS</title>
 </head> 
 <body>
@@ -45,11 +46,11 @@ session_start();
 		<form method="POST" action="../controlador/ctrlMensajes.php">
 		<h1 class="titulo">Enviar Mensaje </h1>
 		<fieldset>
-			<label>Título <span>*</span></label>
+			<label><i class="fa-solid fa-t"></i> Título <span>*</span></label>
 			<input type="text" name="titulo" placeholder="Escriba el título de su mensaje" id="T">
 		</fieldset>
 		<fieldset>
-			<label>Tipo de mensaje <span>*</span></label>
+			<label><i class="fa-solid fa-message"></i> Tipo de mensaje <span>*</span></label>
 			<div class="radio">
 				<input type="radio" name="tipo" value="felicitacion" id="felicitacion">
 				<label for="felicitacion">Felicitación</label>
@@ -65,7 +66,7 @@ session_start();
 			</div>
 		</fieldset>
 		<fieldset>
-			<label>Área de destino <span>*</span></label>
+			<label><i class="fa-solid fa-chart-area"></i> Área de destino <span>*</span></label>
 				<div class="radio">
 				<input type="radio" name="area" value="parvularia" id="parvularia">
 				<label for="parvularia">Parvularia</label>
@@ -91,7 +92,7 @@ session_start();
 		</fieldset>
 
 		<fieldset>
-			<label>Redacte su mensaje <span>*</span></label>
+			<label><i class="fa-solid fa-comment"></i> Redacte su mensaje <span>*</span></label>
 			<input type="textarea" name="mensajes" placeholder="Escriba aquí su mensaje" id="RM">
 		</fieldset>
 

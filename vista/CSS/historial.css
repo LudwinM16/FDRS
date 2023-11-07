@@ -92,7 +92,14 @@ tr th{
 
 .cont{
 	margin-left: 27px;
-	margin-top: 7px;
+	margin-top: 12px;
 }
 
+.cont div{
+	margin-top: 8px;
+}
+
+.cont b{
+	text-transform: capitalize;
+}
 

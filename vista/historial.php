@@ -68,7 +68,7 @@
 		
 		<div class="info">
 		<div class="mensajes">
-			<h3>Mensaje</h3>
+			<h3>MENSAJE</h3>
 		<?php
 			echo "<div class='cont'><div><b>Emisor: </b>". $emi['idUsuario'] . " - " . $emi['apellidos'] .", " . $emi['nombres'] ."</div><div><b>Título: </b>". $mensaje['titulo'] ."</div><div class='tipo'><b>Tipo: </b>" . $mensaje['tipo'] ."</div><div class='destino'><b>Destino: </b>" . $mensaje['destino'] . "</div><div><b>Contenido: </b><br>" . $mensaje['contenido'] . "</div></div>";
 		?>
@@ -83,7 +83,7 @@
 			foreach($respuestas as $respuesta){
 	?>
 			<div class="respuestas">
-				<h3>Respuesta</h3>
+				<h3>RESPUESTA</h3>
 
 	<?php
 		echo "<div class='cont'><div><b>Título: </b>". $respuesta['titulo'] ."</div>" .  "<div><b>Contenido: </b><br>" . $respuesta['contenido'] . "</div></div></div>";
@@ -91,7 +91,7 @@
 		}else{
 	?>
 			<div class="respuestas">
-				<h3>Respuesta</h3>
+				<h3>RESPUESTA</h3>
 				<div class='cont'>Aun no hay respuestas</div>
 			</div>
 	<?php 
@@ -115,7 +115,7 @@
 	?>
 		<div class="info">
 		<div class="mensajes">
-			<h3>Mensaje</h3>
+			<h3>MENSAJE</h3>
 	<?php
 		echo "<div class='cont'><div><b>Emisor: </b>". $emi['idUsuario'] . " - " . $emi['apellidos'] .", " . $emi['nombres'] ."</div><div><b>Título: </b>". $mensaje['titulo'] ."</div><div class='tipo'><b>Tipo: </b>" . $mensaje['tipo'] ."</div><div class='destino'><b>Destino: </b>" . $_SESSION['coordinacion'] . "</div><div><b>Contenido: </b><br>" . $mensaje['contenido'] . "</div></div></div>";
 		$mens = $mensaje['idMensaje'];
@@ -131,14 +131,14 @@
 		foreach($respuestas as $respuesta){
 	?>
 	<div class="respuestas">
-				<h3>Respuesta</h3>
+				<h3>RESPUESTA</h3>
 	<?php
 		echo "<div class='cont'><div><b>Título: </b>". $respuesta['titulo'] ."</div>" .  "<div><b>Contenido: </b><br>" . $respuesta['contenido'] . "</div></div></div>";
 		}
 		}else{
 	?>
 		<div class="respuestas">
-				<h3>Respuesta</h3>			
+				<h3>RESPUESTA</h3>			
 		<div class='cont'>Aun no hay respuestas</div>
 		</div>
 	<?php 
@@ -149,7 +149,7 @@
 	?>
 	<div class="info">
 	<div class="mensajes">
-				<h3>Mensaje</h3>			
+				<h3>MENSAJE</h3>			
 		<div class='cont'>Aun no se han enviado mensajes</div>
 	</div>
 	</div>

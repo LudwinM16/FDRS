@@ -9,6 +9,7 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://kit.fontawesome.com/c5995498b9.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><!-- este ultimo links son los iconos del menu para que se vuelva responsive-->
 	<title>FDRS - Registro</title>
 </head>
@@ -30,7 +31,7 @@
 					<li><a class="active" href="../index.php">Inicio</a></li>
 					
 				
-				<li><a href="sesion.html">Iniciar Sesión</a></li>
+				<li><a href="iniciarSesion.php">Iniciar Sesión</a></li>
 				
 				</ul>	
 			</div>	
@@ -50,20 +51,20 @@
 
 		<div class="formulario">	
 			<form method="POST" action="../controlador/ctrlUsuario.php">
-				<h1 class="titulo">Crea tu cuenta</h1>
+				<h1 class="titulo">Crea tu cuenta <i class="fa-solid fa-user"></i></h1>
 		<div class="grupo">	
 			<fieldset >
-					<label>Nombre <span>*</span></label>
+				<label> <i class="fa-solid fa-font"></i> Nombre <span>*</span></label>
 					<input type="text" name="nom" class="in" placeholder="Tu nombre" required="" minlength="4" maxlength="10" id="nom">
 				</fieldset>
 			<fieldset class="si">
-				<label class="apellido"	>Apellido <span>*</span></label>
+				<label class="apellido"	> <i class="fa-solid fa-font"></i> Apellido <span>*</span></label>
 				<input type="text" name="ape" class="in" placeholder="Tu apellido" required="" minlength="4" maxlength="10" id="ape">
 			</fieldset>
 		</div>
 
 			<fieldset  class="relacion" >
-					<label>Relación con la Institución <span>*</span></label>	
+					<label><i class="fa-solid fa-school"></i> Relación con la Institución <span>*</span></label>	
 					<div class="radio">
 							<input type="radio" name="usu" value="estudiante" id="estudiante">
 							<label for="estudiante">Estudiante</label>
@@ -77,23 +78,23 @@
 			</fieldset>
 
 			<fieldset >
-				<label>Teléfono <span>*</span></label>
+				<label><i class="fa-solid fa-phone"></i> Teléfono <span>*</span></label>
 				<input type="tel" class="tel" name="tel" placeholder="Ingresa tu número telefónico (en este formato: xxxx-xxxx)" required minlength="9" maxlength="9" pattern="[0-9]{4}-[0-9]{4}">
 			</fieldset>
 
 			<fieldset >
-				<label>Correo <span>*</span></label>
+				<label><i class="fa-solid fa-envelope"></i> Correo <span>*</span></label>
 				<input type="email" name="correo" class="correo" placeholder="Ingresa tu correo electrónico" required="" id="correo">
 			</fieldset>
 
 		<div class="grupo">
 			<fieldset >
 			
-				<label>Contraseña <span>*</span></label>
+				<label><i class="fa-solid fa-lock"></i> Contraseña <span>*</span></label>
 				<input type="password" name="contra" class="in" placeholder="Tu contraseña" required="" id="pass1">
 			</fieldset>
 			<fieldset  class="si">
-				<label >Confirmar contraseña <span>*</span></label>
+				<label ><i class="fa-solid fa-lock"></i> Confirmar contraseña <span>*</span></label>
 				<input type="password" name="contra-a" class="in" placeholder="Tu contraseña otra vez" required="" id="pass2">
 			</fieldset>
 		</div>
@@ -103,7 +104,7 @@
 			</fieldset>
 
 			<div class="sesion">
-				<h3>¿Ya tiene una cuenta? <a href="sesion.html"> Iniciar sesión</a></h3>
+				<h3>¿Ya tiene una cuenta? <a href="iniciarSesion.php"> Iniciar sesión</a></h3>
 			</div>
 		</form>
 		</div>

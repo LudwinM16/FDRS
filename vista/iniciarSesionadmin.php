@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
 	<script type="text/javascript" src="../vista/js/verificar.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://kit.fontawesome.com/c5995498b9.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, user-scalable, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<title>FDRS </title>
@@ -50,11 +51,11 @@
 			<form method="post" action="../controlador/ctrlCoordinador.php">
 				<h1 class="titulo">Iniciar Sesión</h1>
 				<fieldset>
-					<label>Correo</label><br>
+					<label><i class="fa-solid fa-envelope"></i> Correo</label><br>
 					<input type="email" name="correo" class="correo" placeholder="Ingresa tu correo electrónico" id="email">
 				</fieldset>
 				<fieldset>
-					<label>Contraseña</label><br>
+					<label><i class="fa-solid fa-lock"></i> Contraseña</label><br>
 					<input type="password" name="contra" class="contra" placeholder="Ingresa una contraseña" id="pass">
 				</fieldset>
 				<fieldset>
